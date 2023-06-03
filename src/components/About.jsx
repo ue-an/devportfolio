@@ -12,7 +12,7 @@ const About = () => {
     </div>
     <div className="flex flex-col justify-center">
      <p className="text-accent font-bold">Hello,</p>
-     <h1 className="md:text-4xl sm:text-3xl text-2xl text-[#030712] drop-shadow-3xl font-bold py-2">I'm Ian Benedict Aguinaldo</h1>
+     <h1 className="md:text-4xl sm:text-3xl text-2xl text-[#030712] drop-shadow-3qxl font-bold py-2">I'm Ian Benedict Aguinaldo</h1>
      <p className=" text-gray-400 text-justify">I am developing mobile applications, web applications and some desktop applications. Most of my projects are full-stack but I also do frontends only. My mostly used languages are C#, Javascript for frontend and PHP for backend. </p>
     </div>
    </div>

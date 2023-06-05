@@ -8,11 +8,7 @@ const Hero = () => {
    <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center md:w-[95vh]">
    <img class="md:max-w-[300px] hover:scale-105 duration-700 max-w-[200px] mx-auto" src={Logo} alt=""/>
    <h1 className="md:text-3xl text-xl font-bold md:py-3">Software Developer</h1>
-   <div className="relative z-[-1] flex mx-auto">
-    <p className=" md:text-2xl text-accent font-bold px-2">Full Stack</p>
-    <span className="text-white">•</span>
-    <p className="md:text-2xl text-accent font-bold px-2">Designer</p>   
-   </div>
+    <p className=" md:text-2xl text-accent font-bold px-2">Full Stack <span className="text-white">•</span> Designer</p>
    <div className="flex justify-center items-center">
     <p className="md:text-4xl sm:text-3xl text-xl font-bold py-4">
      Building Modern

@@ -7,7 +7,7 @@ const Contacts = () => {
      <section>
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-[1080px] ">
           <div className="md:flex flex-col md:items-start">
-           <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
+           <h2 class="mb-4 md:text-4xl sm:text-3xl text-2xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
            <div className="mb-4 flex gap-5 justify-center">
            <AiFillGithub className="hover:scale-150 duration-500 hover:text-accent text-white" size={20}/>
            <AiFillFacebook className="hover:scale-150 duration-500 hover:text-accent text-white" size={20}/>

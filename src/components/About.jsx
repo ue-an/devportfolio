@@ -3,6 +3,8 @@ import Profile from '../assets/profile-live-act.png';
 import ProfileVect from '../assets/profile-vector.png';
 import {DiLaravel, DiJavascript } from 'react-icons/di';
 import {SiCsharp, SiJavascript, SiLaravel, SiPhp, SiFlutter, SiReact} from 'react-icons/si';
+import CSharp from '../assets/csharp_icon.png';
+import {TbBrandCSharp} from 'react-icons/tb';
 
 const About = () => {
 
@@ -18,7 +20,9 @@ const About = () => {
      <p className=" text-gray-400 text-justify">A mobile applications and web applications developer. Most of my projects are full-stack but I also do frontends only. My mostly used languages are C#, Javascript for frontend, PHP for backend, and MySQL for database.</p>
      <p className=" mt-3 text-gray-400 text-justify">Currently learning other frameworks and tech stacks; and open for opportunities to be trained to enhance my skills further.</p>
      <div className="mb-9 w-full mt-3 flex gap-3 justify-around duration-500">
-      <SiCsharp className="hover:scale-150 duration-500 hover:text-accent text-gray-300" size={45}/>
+      {/* <SiCsharp className="hover:scale-150 duration-500 hover:text-accent text-gray-300" size={45}/> */}
+      {/* <img className="w-[45px] hover:scale-150 duration-500 hover:text-accent text-gray-300" src={CSharp} alt="" /> */}
+      <TbBrandCSharp className="hover:scale-150 duration-500 hover:text-accent text-gray-300" size={45} />
       <SiJavascript className="hover:scale-150 duration-500 hover:text-accent text-gray-300" size={45} />
       <SiPhp className="hover:scale-150 duration-500 hover:text-accent text-gray-300" size={45} />
      </div>

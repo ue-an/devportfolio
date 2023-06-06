@@ -14,7 +14,7 @@ const Hero = () => {
      Building Modern
      </p>
     <Typed 
-    className="md:pl-4 sm:pl-2 pl-1 md:text-5xl sm:text-4xl text-xl font-bold"
+    className="md:pl-4 sm:pl-2 pl-1 md:text-4xl sm:text-3xl text-xl font-bold"
     strings = {['Web App', 'Mobile App', 'Desktop App']}
     typeSpeed={120}
     backSpeed={140}

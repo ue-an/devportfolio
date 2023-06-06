@@ -9,7 +9,7 @@ import {TbBrandCSharp} from 'react-icons/tb';
 const About = () => {
 
  return (
-  <div className="pb-16 px-4 w-full">
+  <div className="py-8 px-4 w-full">
    <div className="max-w-[1080px] mx-auto grid md:grid-cols-2">
     <div className="pr-10">
      <img className="rounded-full hover:scale-105 duration-500 md:w-[300px] w-[250px] mx-auto my-4" src={ProfileVect} alt="" />
@@ -33,6 +33,7 @@ const About = () => {
      </div>
     </div>
    </div>
+   <div id="contacts"></div>
   </div>
  );
 }

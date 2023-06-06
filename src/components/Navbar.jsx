@@ -13,6 +13,28 @@ const Navbar = () => {
   setHov(!hov);
  }
 
+ const handleHomeScroll = () => {
+    const home = document.getElementById('home');
+    if (home) {
+      // 👇 Will scroll smoothly to the top of the next section
+      home.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleAboutScroll = () => {
+    const about = document.getElementById('about');
+    if (about) {
+      about.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleContactsScroll = () => {
+    const contacts = document.getElementById('contacts');
+    if (contacts) {
+      contacts.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
  return (
   <div className="bg-primary sticky top-0 flex justify-between items-center px-4 h-24 mx-auto max-w-[1080px] text-white">
    <div className="w-[90%] flex justify-between items-center">
@@ -21,7 +43,7 @@ const Navbar = () => {
       <div className="relative z-0">
         {hov ? <h1 class="rotate-12 translate-y-6 duration-500 text-gray-600 font-semibold">IAN AGUINALDO</h1> : <h1 className="font-semibold">DEV PORTFOLIO</h1>}
         <div onMouseEnter={handleHov} onMouseLeave={handleHov} className="absolute inset-0 z-10 font-semibold">
-          <h1 className="fixed">DEV PORTFOLIO</h1>
+          <h1 className="fixed"><a href='#home'>DEV PORTFOLIO</a></h1>
         </div>
       </div>
     </div>
@@ -41,9 +63,10 @@ const Navbar = () => {
       </div>
     </div>
     <ul className="md:text-2xl text-right uppercase p-4">
-     <li className="hover:scale-90 hover:text-accent duration-500 p-4 border-b border-accent">Home</li>
-     <li className="hover:scale-90 hover:text-accent duration-500 p-4 border-b border-accent">About</li>
-     <li className="hover:scale-90 hover:text-accent duration-500 p-4">Contacts</li>
+     <li className="hover:scale-90 hover:text-accent duration-500 p-4 border-b border-accent"><button onClick={handleHomeScroll}>Home</button></li>
+     <li className="hover:scale-90 hover:text-accent duration-500 p-4 border-b border-accent"><button onClick={handleAboutScroll}>About</button></li>
+     {/* <li className="hover:scale-90 hover:text-accent duration-500 p-4 border-b border-accent">About</li> */}
+     <li className="hover:scale-90 hover:text-accent duration-500 p-4"><button onClick={handleContactsScroll}>Contacts</button></li>
     </ul>
    </div>
   </div>

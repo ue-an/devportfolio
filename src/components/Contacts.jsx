@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {AiFillGithub, AiFillFacebook, AiFillLinkedin} from "react-icons/ai";
 
 const Contacts = () => {
@@ -7,12 +7,14 @@ const Contacts = () => {
      <section>
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-[1080px] ">
           <div className="md:flex flex-col md:items-start">
-           <h2 class="mb-4 md:text-4xl sm:text-3xl text-2xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
-           <div className="mb-4 flex gap-5 justify-center">
-           <AiFillGithub className="hover:scale-150 duration-500 hover:text-accent text-white" size={20}/>
-           <AiFillFacebook className="hover:scale-150 duration-500 hover:text-accent text-white" size={20}/>
-           <AiFillLinkedin className="hover:scale-150 duration-500 hover:text-accent text-white" size={20}/>
-          </div>
+            <div className="md:flex items-center justify-between w-full">
+                <h2 class="mb-4 md:text-4xl sm:text-3xl text-2xl tracking-tight font-extrabold text-center text-white">Contact Me</h2>
+                <div className="mb-4 flex gap-5 justify-center">
+                <AiFillGithub className="hover:scale-150 duration-500 hover:text-accent text-white" size={30}/>
+                <AiFillFacebook className="hover:scale-150 duration-500 hover:text-accent text-white" size={30}/>
+                <AiFillLinkedin className="hover:scale-150 duration-500 hover:text-accent text-white" size={30}/>
+                </div>
+            </div>
            <p class="mb-8 lg:mb-16 font-light md:text-left text-center text-gray-500 sm:text-xl">Got a project? Want to send feedback? Need details and want to inquire? Let me know.</p>
           </div>
           <form action="#" class="space-y-8">
@@ -29,6 +31,7 @@ const Contacts = () => {
                   <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
               </div>
               <button type="submit" class="py-3 px-5 text-sm font-semibold text-center text-primary rounded-lg bg-accent hover:opacity-50 duration-100">Send message</button>
+              {/* <a className="text-white" href="mailto:ianbenedictaguinaldo@gmail.com">Send Message</a> */}
           </form>
       </div>
      </section>

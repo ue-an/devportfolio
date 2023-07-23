@@ -1,3 +1,10 @@
+# Portfolio v1
+### My first version of portfolio
+
+# Screenshot / Image:
+![PortfolioV1_Cover](https://github.com/ue-an/devportfolio/assets/68469141/52aefb95-ce12-4b9a-9a16-a0588b3b06f7)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
